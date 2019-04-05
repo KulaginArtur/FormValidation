@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task B</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body><h1>Form validation JavaScript</h1>
+<form onsubmit="return validate()" novalidate>
+    <label>Firstname
+        <input type="text" id="fname" required>
+    </label>
+    <br>
+    <label>Lastname
+        <input type="text" id="lname" required>
+    </label>
+    <br>
+    <label>Email
+        <input type="email" id="email" required pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$">
+    </label>
+    <br>
+    <label>Phone number
+        <input type="tel" id="phone" required pattern="^\+[0-9]{5,}$">
+    </label>
+    <br>
+    <label>Address
+        <input type="text" id="address"> </label>
+    <br>
+    <label>Postal code
+        <input type="text"
+               id="postal"
+               pattern="^[0-9]{5}$">
+    </label>
+    <br>
+    <label>Password
+        <input type="password" id="pass" required> </label>
+    <br>
+    <input type="submit"
+           value="Save data">
+</form>
+<script src="main.js"></script>
+</body>
+</html>
